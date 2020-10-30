@@ -2,7 +2,7 @@
 Using a double pointer in order to create a 2D data structure to create a simple program for a store's Inventory Management and transaction history and receipts 
 
 # Sample Output
-<div>
+<rawtext>
 *** Inventory before costumer transaction ***
 
 ************************************************* 
@@ -137,4 +137,4 @@ Mark purchased 3 Under Armour T-shirt for $89.97
 Mark purchased 1 Brooks running shoes for $111.44
 Mark purchased 4 Nike shorts for $183.08
 ****************************************************** 
-</div>
+</rawtext>
