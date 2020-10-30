@@ -5,14 +5,14 @@ Using a double pointer in order to create a 2D data structure to create a simple
 
 \*** Inventory before costumer transaction ***
 
-************************************************* 
+\************************************************* 
                    INVENTORY
-************************************************* 
-ITEM                       QUANTITY    PRICE
--------------------------  ----------  -------  
-Nike basketball shoes      22          145.99
--------------------------  ----------  -------  
-Under Armour T-shirt       33          29.99
+\************************************************* 
+\ITEM                       QUANTITY    PRICE
+\-------------------------  ----------  -------  
+\Nike basketball shoes      22          145.99
+\-------------------------  ----------  -------  
+\Under Armour T-shirt       33          29.99
 -------------------------  ----------  -------  
 Brooks running shoes       11          111.44
 -------------------------  ----------  -------  
@@ -137,4 +137,4 @@ Mark purchased 3 Under Armour T-shirt for $89.97
 Mark purchased 1 Brooks running shoes for $111.44
 Mark purchased 4 Nike shorts for $183.08
 ****************************************************** 
-\
+
