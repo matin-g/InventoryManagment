@@ -1,0 +1,164 @@
+Script started on Thu Jun 27 22:09:00 2019
+[?1034hbash-3.2$ date
+Thu Jun 27 22:09:02 PDT 2019
+bash-3.2$ ls -l
+total 56
+-rw-r--r--  1 matinghaffari  staff    392 Jun 27 12:20 Makefile
+-rw-r--r--  1 matinghaffari  staff  10947 Jun 27 22:04 ManageInventory.cpp
+-rw-r--r--  1 matinghaffari  staff   3128 Jun 27 22:05 ManageInventory.h
+-rw-r--r--  1 matinghaffari  staff   3242 Jun 27 20:16 hw07.cpp
+-rw-r--r--  1 matinghaffari  staff     43 Jun 27 22:09 hw07.scr
+bash-3.2$ make all
+g++ -std=c++14 -Wall -g -c ManageInventory.cpp -o ManageInventory.o 
+g++ -std=c++14 -Wall -g hw07.cpp -o hw07 ManageInventory.o
+bash-3.2$ ls -l
+total 496
+-rw-r--r--  1 matinghaffari  staff     392 Jun 27 12:20 Makefile
+-rw-r--r--  1 matinghaffari  staff   10947 Jun 27 22:04 ManageInventory.cpp
+-rw-r--r--  1 matinghaffari  staff    3128 Jun 27 22:05 ManageInventory.h
+-rw-r--r--  1 matinghaffari  staff  151780 Jun 27 22:09 ManageInventory.o
+-rwxr-xr-x  1 matinghaffari  staff   67808 Jun 27 22:09 hw07
+-rw-r--r--  1 matinghaffari  staff    3242 Jun 27 20:16 hw07.cpp
+drwxr-xr-x  3 matinghaffari  staff      96 Jun 27 22:09 hw07.dSYM
+-rw-r--r--  1 matinghaffari  staff      43 Jun 27 22:09 hw07.scr
+bash-3.2$ ./hw07
+
+*** PART 2 - Inventory before costumer transaction ***
+
+************************************************* 
+                   INVENTORY
+************************************************* 
+ITEM                       QUANTITY    PRICE
+-------------------------  ----------  -------  
+Nike basketball shoes      22          145.99
+-------------------------  ----------  -------  
+Under Armour T-shirt       33          29.99
+-------------------------  ----------  -------  
+Brooks running shoes       11          111.44
+-------------------------  ----------  -------  
+Asics running shoes        20          165.88
+-------------------------  ----------  -------  
+Nike shorts                77          45.77
+************************************************* 
+
+*** PART 1 - Performing costumer transaction ***
+
+Enter your name : Mark
+
+Menu options for the items available for sale
+1 - Nike basketball shoes
+2 - Under Armour T-shirt
+3 - Brooks running shoes
+4 - Asics running shoes
+5 - Nike shorts
+0 - Exit
+
+**** Enter a integer between 1 and 5 to add one corresponding item to the cart, or 0 to checkout ****
+
+Enter a item (1-5) to add (0 to exit): 1
+
+Enter a item (1-5) to add (0 to exit): 1
+
+Enter a item (1-5) to add (0 to exit): 2
+
+Enter a item (1-5) to add (0 to exit): 2
+
+Enter a item (1-5) to add (0 to exit): 2
+
+Enter a item (1-5) to add (0 to exit): 5
+
+Enter a item (1-5) to add (0 to exit): 5
+
+Enter a item (1-5) to add (0 to exit): 5
+
+Enter a item (1-5) to add (0 to exit): 5
+
+Enter a item (1-5) to add (0 to exit): 3
+
+Enter a item (1-5) to add (0 to exit): 0
+
+*** PART 1 - Printing receipt for costumer transaction ***
+
+********************************************* 
+                      RECEIPT
+********************************************* 
+PRODUCT                QUANTITY    SUBTOTAL
+---------------------  ----------  ---------  
+Nike basketball shoes  2           $291.98
+Under Armour T-shirt   3           $89.97
+Brooks running shoes   1           $111.44
+Asics running shoes    0           $0
+Nike shorts            4           $183.08
+                           -----------------  
+                           TOTAL : $676.47
+                           TAX   : $55.81
+                  --------------------------  
+                  TOTAL WITH TAX : $732.28
+********************************************* 
+
+*** PART 2 - Inventory after costumer transaction ***
+
+************************************************* 
+                   INVENTORY
+************************************************* 
+ITEM                       QUANTITY    PRICE
+-------------------------  ----------  -------  
+Nike basketball shoes      20          145.99
+-------------------------  ----------  -------  
+Under Armour T-shirt       30          29.99
+-------------------------  ----------  -------  
+Brooks running shoes       10          111.44
+-------------------------  ----------  -------  
+Asics running shoes        20          165.88
+-------------------------  ----------  -------  
+Nike shorts                73          45.77
+************************************************* 
+
+*** PART 3 - Using copy constructor to print original inventory ***
+
+************************************************* 
+                   INVENTORY
+************************************************* 
+ITEM                       QUANTITY    PRICE
+-------------------------  ----------  -------  
+Nike basketball shoes      22          145.99
+-------------------------  ----------  -------  
+Under Armour T-shirt       33          29.99
+-------------------------  ----------  -------  
+Brooks running shoes       11          111.44
+-------------------------  ----------  -------  
+Asics running shoes        20          165.88
+-------------------------  ----------  -------  
+Nike shorts                77          45.77
+************************************************* 
+
+*** EXTRA CREDIT - Printing audit log ***
+
+****************************************************** 
+               Transaction History 
+****************************************************** 
+Customer transaction on : Thu Jun 27 22:09:23 2019
+------------------------------------------------------ 
+Mark purchased 2 Nike basketball shoes for $291.98
+Mark purchased 3 Under Armour T-shirt for $89.97
+Mark purchased 1 Brooks running shoes for $111.44
+Mark purchased 4 Nike shorts for $183.08
+****************************************************** 
+
+*** EXTRA CREDIT - Using copy constructor to print a copy of the transaction history ***
+
+****************************************************** 
+               Transaction History 
+****************************************************** 
+Customer transaction on : Thu Jun 27 22:09:23 2019
+------------------------------------------------------ 
+Mark purchased 2 Nike basketball shoes for $291.98
+Mark purchased 3 Under Armour T-shirt for $89.97
+Mark purchased 1 Brooks running shoes for $111.44
+Mark purchased 4 Nike shorts for $183.08
+****************************************************** 
+
+bash-3.2$ exit
+exit
+
+Script done on Thu Jun 27 22:09:58 2019
